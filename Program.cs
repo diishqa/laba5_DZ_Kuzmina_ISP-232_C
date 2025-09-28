@@ -1,4 +1,6 @@
-﻿namespace laba5_DZ_Kuzmina_ISP_232_C
+﻿using System.Numerics;
+
+namespace laba5_DZ_Kuzmina_ISP_232_C
 {
     internal class Program
     {
@@ -123,6 +125,89 @@
             //string input = Console.ReadLine();
             //IsPalindrome(input);
             //задание 10
+            //void ReverseArray(int[] m)
+            //{
+            //    int lenm = m.Length;
+            //    int[] m2 = new int[lenm];
+
+            //    for (int i = 0; i < lenm; i++)
+            //    {
+            //        int r = lenm - i - 1;
+            //        m2[i] = m[r];
+            //        r--;
+            //    }
+            //    foreach (int i in m2)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            //int[] mas = [ 1, 2, 3, 4, 5, 6, 7 ];
+            //ReverseArray(mas);
+            //задание 11
+            //void slozh (int n, int m)
+            //{
+            //    Console.WriteLine($"Сложение: {n}+{m}={n + m}");
+            //}
+            //void vicht (int n, int m)
+            //{
+            //    Console.WriteLine($"Вычитание: {n}-{m}={n - m}");
+            //}
+            //void umno(int n, int m)
+            //{
+            //    Console.WriteLine($"Умножение: {n}*{m}={n * m}");
+            //}
+            //void delen(int n, int m)
+            //{
+            //    Console.WriteLine($"Деление: {n}:{m}={n / m}");
+            //}
+            //Console.WriteLine("Введите 2 числа: ");
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Введите действие: ");
+            //string de = Console.ReadLine();
+            //if (de == "+")
+            //{
+            //    slozh(num1, num2);
+            //}
+            //else if (de == "-")
+            //{
+            //    vicht(num1, num2);
+            //}
+            //else if (de == "*")
+            //{
+            //    umno(num1, num2);
+            //}
+            //else if (de == "/" || de == ":")
+            //{
+            //    delen(num1, num2);
+            //}
+            //задание 12
+            void IsPrime(int pr)
+            {
+                int samsebya = 0;
+                for(int i=2; i<=pr; i++)
+                {
+                    if (pr % i == 0)
+                    {
+                        samsebya++;
+                    }
+                }
+                if (samsebya==1)
+                {
+                    Console.WriteLine(pr);
+                }
+                
+            }
+            void PrintPrimesUpTo(int n)
+            {
+                for (int i = 2; i <= n; i++)
+                {
+                    IsPrime(i);
+                }
+            }
+            Console.Write("введите n: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            PrintPrimesUpTo(num);
 
 
 
@@ -135,12 +220,7 @@
 
 
 
-
-
-
-
-
-            Console.ReadLine();
+                Console.ReadLine();
 
 
         }
